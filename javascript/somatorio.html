@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somatório</title>
+
+    <style>
+        code {
+          color: crimson;
+          background-color: #f1f1f1;
+          padding: 2px;
+          font-size: 105%;
+        }
+        </style>
+</head>
+    <h3>Algoritmo de Somatório</h3>
+<body>
+    <script>
+
+        var n = prompt("Digite a quantidade de números");
+        
+        var num;
+        var soma = 0;
+        var i = 0;
+        
+        while(i < n){
+            i++;
+            num = Number(prompt("Digite um número"));
+            soma += num;
+        }
+        
+        document.write(`A somas dos ${n} números é igual a: ${soma}`);
+    </script>
+    <div class="codigo">
+        <hr><br><br><h5>Algoritmo rodado:</h5><br>
+
+        
+        <code>
+            var n = prompt("Digite a quantidade de números");<br><br>
+        
+            var num;<br>
+            var soma = 0;<br>
+            var i = 0;<br><br>
+            
+            while(i < n){<br>
+                i++;<br>
+                num = Number(prompt("Digite um número"));<br>
+                soma += num;<br>
+            }<br><br>
+            
+            document.write(`A somas dos ${n} números é igual a: ${soma}`);<br>
+      </code>
+    </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo de Contagem</title>
+
+    <style>
+        code {
+          color: crimson;
+          background-color: #f1f1f1;
+          padding: 2px;
+          font-size: 105%;
+        }
+        </style>
+</head>
+<body>
+    <h3>Algoritmo de Contagem</h3>
+    <script>
+
+        var n = prompt("Digite o número de notas");
+        
+        var nota;
+        var cont = 0;
+        var i = 0;
+        
+        while(i < n){
+            i++;
+            nota = prompt("Digite a nota do aluno");
+            if(nota >= 5.0){
+                cont++;
+            }
+        }
+        
+        document.write("Número de aprovações: "+ cont);
+        
+        </script>
+
+
+    <div class="codigo">
+        <hr><br><br><h5>Algoritmo rodado:</h5><br>
+
+    
+    <code>
+        var n = prompt("Digite o número de notas");<br><br>
+        
+        var nota;<br>
+        var cont = 0;<br>
+        var i = 0;<br><br>
+        
+        while(i < n){<br>
+            i++;<br>
+            nota = prompt("Digite a nota do aluno");<br>
+            if(nota >= 5.0){<br>
+                cont++;<br>
+            }<br>
+        }<br><br>
+        
+        document.write("Número de aprovações: "+ cont);<br>
+      </code>
+    </div>
+</body>
+</html>

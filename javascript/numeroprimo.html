@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação de Número Primo</title>
+
+    <style>
+        code {
+          color: crimson;
+          background-color: #f1f1f1;
+          padding: 2px;
+          font-size: 105%;
+        }
+        </style>
+</head>
+<body>
+    <h3>Verificação de Número Primo</h3>
+    <script>
+
+        var n = prompt("Digite um número: ");
+    
+        function numeroprimo(x){
+            var cont = 0;
+            for(let i = 1; i <= x; i++){
+                if(x%i == 0){
+                    cont++;
+                }
+            }
+            if(cont == 2){
+                document.write("É primo");
+            }else{
+                document.write("Não é primo");
+            }
+        }
+    
+        numeroprimo(n);
+    </script>
+
+    <div class="codigo">
+    <hr><br><br><h5>Algoritmo rodado:</h5><br>
+
+        
+        <code>
+            var n = prompt("Digite um número: ");<br><br>
+    
+            function numeroprimo(x){<br>
+                var cont = 0;<br>
+                for(let i = 1; i <= x; i++){<br>
+                    if(x%i == 0){<br>
+                        cont++;<br>
+                    }<br>
+                }<br>
+                if(cont == 2){<br>
+                    document.write("É primo");<br>
+                }else{<br>
+                    document.write("Não é primo");<br>
+                }<br>
+            }<br><br>
+        
+            numeroprimo(n);<br>
+      </code>
+    </div>
+</body>
+</html>

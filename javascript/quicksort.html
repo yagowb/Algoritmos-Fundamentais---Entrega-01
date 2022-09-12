@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickSort</title>
+
+    <style>
+        code {
+          color: crimson;
+          background-color: #f1f1f1;
+          padding: 2px;
+          font-size: 105%;
+        }
+        </style>
+</head>
+    <h3>Ordenação em método QuickSort</h3>
+<body>
+    <script>
+        var items = [];
+        
+        for(var a = 0; a < 6; a++) {
+            items[a] = prompt('Digite o elemento ' + (a+1));
+        }
+
+        document.write("Array digitado: " + items);
+        document.write("<br><br><br>");
+        
+        
+        function swap(items, leftIndex, rightIndex){
+            var temp = items[leftIndex];
+            items[leftIndex] = items[rightIndex];
+            items[rightIndex] = temp;
+        }
+        function partition(items, left, right) {
+            var pivot   = items[Math.floor((right + left) / 2)], //middle element
+                i       = left, //left pointer
+                j       = right; //right pointer
+            while (i <= j) {
+                while (items[i] < pivot) {
+                    i++;
+                }
+                while (items[j] > pivot) {
+                    j--;
+                }
+                if (i <= j) {
+                    swap(items, i, j); //swapping two elements
+                    i++;
+                    j--;
+                }
+            }
+            return i;
+        }
+        
+        function quickSort(items, left, right) {
+            var index;
+            if (items.length > 1) {
+                index = partition(items, left, right); //index returned from partition
+                if (left < index - 1) { //more elements on the left side of the pivot
+                    quickSort(items, left, index - 1);
+                }
+                if (index < right) { //more elements on the right side of the pivot
+                    quickSort(items, index, right);
+                }
+            }
+            return items;
+        }
+        // first call to quick sort
+        var sortedArray = quickSort(items, 0, items.length - 1);
+        
+        document.write("Array ordenado: " + sortedArray); 
+    </script>
+
+    <div class="codigo">
+    <hr><br><br><h5>Algoritmo rodado:</h5><br>
+
+    <code>
+        var items = [];<br><br>
+        
+        for(var a = 0; a < 6; a++) {<br>
+            items[a] = prompt('Digite o elemento ' + (a+1));<br>
+        }<br><br>
+
+        document.write("Array digitado: " + items);<br>
+        document.write(" ");<br><br><br>
+        
+        
+        function swap(items, leftIndex, rightIndex){<br>
+            var temp = items[leftIndex];<br>
+            items[leftIndex] = items[rightIndex];<br>
+            items[rightIndex] = temp;<br>
+        }<br>
+        function partition(items, left, right) {<br>
+            var pivot   = items[Math.floor((right + left) / 2)], //middle element<br>
+                i       = left, //left pointer<br>
+                j       = right; //right pointer<br>
+            while (i <= j) {<br>
+                while (items[i] < pivot) {<br>
+                    i++;<br>
+                }<br>
+                while (items[j] > pivot) {<br>
+                    j--;<br>
+                }<br>
+                if (i <= j) {<br>
+                    swap(items, i, j); //swapping two elements<br>
+                    i++;<br>
+                    j--;<br>
+                }<br>
+            }<br>
+            return i;<br>
+        }<br><br>
+        
+        function quickSort(items, left, right) {<br>
+            var index;<br>
+            if (items.length > 1) {<br>
+                index = partition(items, left, right); //index returned from partition<br>
+                if (left < index - 1) { //more elements on the left side of the pivot<br>
+                    quickSort(items, left, index - 1);<br>
+                }<br>
+                if (index < right) { //more elements on the right side of the pivot<br>
+                    quickSort(items, index, right);<br>
+                }<br>
+            }<br>
+            return items;<br>
+        }<br>
+        // first call to quick sort<br>
+        var sortedArray = quickSort(items, 0, items.length - 1);<br><br>
+        
+        document.write("Array ordenado: " + sortedArray); <br>
+    </code>
+    </div>
+</body>
+</html>
