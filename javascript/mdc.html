@@ -6,14 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Máximo Divisor Comum</title>
 
-    <style>
-        code {
-          color: crimson;
-          background-color: #f1f1f1;
-          padding: 2px;
-          font-size: 105%;
-        }
-        </style>
 </head>
 <body>
     <h3>Algoritmo de MDC</h3>
@@ -40,31 +32,6 @@
         mdc(n1,n2);
     </Script>
 
-    <div class="codigo">
-    <hr><br><br><h5>Algoritmo rodado:</h5><br>
-
-        
-        <code>
-            function mdc(num1, num2) {<br><br>
-
-                var resto;<br><br>
-            
-                do {<br>
-                    resto = num1 % num2;<br><br>
-            
-                    num1 = num2;<br>
-                    num2 = resto;<br><br>
-            
-                } while (resto != 0);<br><br>
-            
-                document.write("Máximo divisor comum: " + num1);<br>
-            }<br><br>
-    
-            var n1 = parseInt(prompt("Digite o primeiro número: "));<br>
-            var n2 = parseInt(prompt("Digite o segundo número:"));<br><br>
-    
-            mdc(n1,n2);<br>
-      </code>
-    </div>
+  
 </body>
 </html>
