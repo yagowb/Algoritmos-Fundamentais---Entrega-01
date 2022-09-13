@@ -3,15 +3,16 @@ import java.util.Scanner;
 
 public class MaximoDivisorComum {
 
-  Scanner prompt = new Scanner(System.in);
-  int num1, num2, resto, result;
+  public static void main(String[] args) {
+    Scanner prompt = new Scanner(System.in);
+    int num1, num2, resto, result;
 
-  public void mdc(){
+
 
     System.out.println("Digite o primeiro número: ");
-    int num1 = prompt.nextInt();
+    num1 = prompt.nextInt();
     System.out.println("Digite o segundo número: ");
-    int num2 = prompt.nextInt();
+    num2 = prompt.nextInt();
 
       do{
         resto = num1%num2;
@@ -23,3 +24,4 @@ public class MaximoDivisorComum {
     System.out.println("O máximo divisor comum é "+num1);
   }
 }
+    

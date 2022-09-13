@@ -3,14 +3,16 @@ import java.util.Scanner;
 
 public class NumeroPrimo {
 
-  Scanner prompt = new Scanner(System.in);
-  int num, cont = 0, i = 1;
 
-    public void verificaprimo(){
+  public static void main(String[] args) {
+    Scanner prompt = new Scanner(System.in);
+    int num, cont = 0, i = 1;
+
+    
       System.out.println("Digite um número e verifique se o mesmo é primo: ");
-      int num = prompt.nextInt();
+      num = prompt.nextInt();
 
-      for(int i = 1; i <= num; i++){
+      for(i = 1; i <= num; i++){
         if(num%i == 0){
           cont++;
         }
@@ -21,4 +23,5 @@ public class NumeroPrimo {
           System.out.println("O número não é primo");
       }
     }
-}
+  }
+
