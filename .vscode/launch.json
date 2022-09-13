@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Fatorial",
+            "request": "launch",
+            "mainClass": "Fatorial",
+            "projectName": "Algoritmos Fundamentais - Entrega 01_7eae4b5e"
+        },
+        {
+            "type": "java",
             "name": "Launch Contagem",
             "request": "launch",
             "mainClass": "Contagem",
