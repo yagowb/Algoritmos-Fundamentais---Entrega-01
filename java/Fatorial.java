@@ -5,7 +5,7 @@ public class Fatorial{
 
     int n, prod = 1, i = 0;
 
-    public void Fatorial(){
+    public void Fat(){
         System.out.println("Digite o número: ");
         n = prompt.nextInt();
 

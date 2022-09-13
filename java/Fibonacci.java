@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 
 public class Fibonacci {
@@ -6,7 +7,7 @@ public class Fibonacci {
 
   public void sequenciafibonacci(){
 
-    System.out.println("Digite o número de termos: ");
+    System.out.println("Digite o nº de termos: ");
     int termos = prompt.nextInt();
 
     while(i < termos){

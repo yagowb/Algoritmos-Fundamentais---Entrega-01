@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Contagem {
-
+    
     Scanner prompt = new Scanner(System.in);
     int n, nota, cont = 0, i = 0;
     
