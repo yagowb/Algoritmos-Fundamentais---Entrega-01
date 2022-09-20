@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class QuickSort
 {
   
@@ -52,13 +54,17 @@ public class QuickSort
     
     public static void main(String args[])
     {
-        int arr[] = {10, 7, 8, 9, 1, 5};
-        int n = arr.length;
- 
+        Scanner prompt = new Scanner(System.in);
+        System.out.println("Digite os elementos do array: \n");  
+        int[] arr = new int[10];
+
+            for(int i=0; i< 10; i++) {  
+            arr[i] = prompt.nextInt();  
+            }  
         QuickSort ob = new QuickSort();
-        ob.sort(arr, 0, n-1);
+        ob.sort(arr, 0, arr.length-1);
  
-        System.out.println("sorted array");
+        System.out.println("\nNúmeros ordenados: \n");
         printArray(arr);
     }
 }
