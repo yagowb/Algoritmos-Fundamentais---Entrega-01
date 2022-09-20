@@ -23,7 +23,7 @@ public class Contagem {
       }
 
       System.out.println("Existem " + n + " alunos matriculados");
-      System.out.println("Foram aprovados " + cont + " aprovados");
+      System.out.println("Foram aprovados " + cont + " alunos");
     
   }
     
