@@ -15,10 +15,8 @@ public class Contagem {
         i = i + 1;
         System.out.println("Digite a " + i + "ª nota: ");
         nota = prompt.nextInt();
-        if(nota < 7){
-          cont = cont + 0;
-        }else {
-          cont = cont + 1;
+        if(nota >= 5){
+          cont++;
         }
       }
 
