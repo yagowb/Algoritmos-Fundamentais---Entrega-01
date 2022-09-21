@@ -8,7 +8,7 @@ public class Contagem {
     int N, cont = 0;
   
   
-      System.out.println("Digite o valor N: ");
+      System.out.println("Digite o valor de N: ");
       N = prompt.nextInt();
 
       int[] numero = new int[N];
