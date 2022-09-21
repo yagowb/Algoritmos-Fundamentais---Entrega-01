@@ -1,5 +1,6 @@
 # Algoritmos-Fundamentais---Entrega-01
-Algoritmos Fundamentais em JavaScript/Java para a disciplina Ambientes de Desenvolvimento de Software - Prof. José Alzir
+Algoritmos Fundamentais em JavaScript/Java para a disciplina Ambientes de Desenvolvimento de Software - 
+Prof. José Alzir
 
 
 Algoritmos: 
