@@ -12,19 +12,32 @@
     <script>
 
         var cont = 0;
-        var n = prompt("Digite N: ");
+        var N = parseInt(prompt("Digite N: "));
+        var numero = [N];
         
-        for(let i = 0; i < n; i++){
-            var x = parseInt(prompt("Digite um número: "));
+        for(let i = 1; i <= N; i++){
+            numero[i] = prompt("Digite o " + i + "º número: ");
         }
 
-        for(let i = 0; i < x; i++){
-            if(i > 0){
-                cont++;
+        if(numero[1] > N){
+            for(let j = numero[1]; N <= j; j--){
+                if(j > 0){
+                    cont++;
+                }
             }
         }
-        
-        document.write("Número de valores inteiros: "+ cont);
+
+        if(numero[1] < N){
+            for(let j = numero[1]; j <= N; j++){
+                if(j > 0){
+                   cont++;
+                    }
+                }
+            }
+
+            cont = cont - 1;
+    
+          document.write("Número de valores inteiros entre " + numero[1] + " e " + N + " é igual a: " + cont);
         
         </script>
 

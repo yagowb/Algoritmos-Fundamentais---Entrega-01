@@ -5,23 +5,38 @@ public class Contagem {
 
   public static void main(String[] args) {
     Scanner prompt = new Scanner(System.in);
-    int n, nota, cont = 0, i = 0;
-    
-    
-      System.out.println("Quantidade de alunos: ");
-      n = prompt.nextInt();
+    int N, cont = 0;
+  
+  
+      System.out.println("Digite N: ");
+      N = prompt.nextInt();
 
-      while(i < n){
-        i = i + 1;
-        System.out.println("Digite a " + i + "ª nota: ");
-        nota = prompt.nextInt();
-        if(nota >= 5){
-          cont++;
+      int[] numero = new int[N];
+
+     for(int i = 0; i < numero.length; i++){
+        
+        System.out.println("Digite o elemento [" + i + "]");
+        numero[i] = prompt.nextInt();
+     }
+  
+        if(numero[0] > N){
+          for(int j = numero[0]; N <= j; j--){
+              if(j > 0){
+                  cont++;
+              }
+          }
         }
-      }
 
-      System.out.println("Existem " + n + " alunos matriculados");
-      System.out.println("Foram aprovados " + cont + " alunos");
+        if(numero[0] < N){
+            for(int j = numero[0]; j <= N; j++){
+                if(j > 0){
+                  cont++;
+                    }
+                }
+            }
+
+      cont = cont - 1;
+      System.out.printf("Número de valores inteiros entre %d e %d é igual a: %d", numero[0], N, cont);
     
   }
     
